@@ -29,6 +29,7 @@ text-align: center;
   text-transform: uppercase;
 
 }
+
 .welcome{
 
 }
@@ -57,6 +58,36 @@ text-align: center;
 }
 
 .startbutton{
-font-size: 20px;
-padding: 20px 80px;
+  outline: none;
+      border: 2px solid white;
+      background: #EDF1F2;
+      padding: 1rem 4rem;
+      color: #222;
+      font-weight: bold;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: -1px;
+      border-radius: 2px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.rejected{
+  background-color: red;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+.accepted{
+  width: 100vw;
+  height: 100vh;
+  background: #66cc88;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #EDF1F2;
+  font-size: 100px;
+  text-transform: uppercase;
+
 }

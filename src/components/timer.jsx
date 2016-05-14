@@ -7,7 +7,7 @@ export default class CountdownTimer extends React.Component {
  constructor(props){
    super(props);
    this.state = {
-     secondsRemaining: 0
+     secondsRemaining: 60
    }
  }
 
@@ -28,9 +28,11 @@ export default class CountdownTimer extends React.Component {
    this.setState({ secondsRemaining: this.props.secondsRemaining });
    this.timer = setInterval(this._tick.bind(this), 1000);
  }
+
  componentWillUnmount() {
    clearInterval(this.timer);
  }
+
  render(){
    return (
      <div className="timer">

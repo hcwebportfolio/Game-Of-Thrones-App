@@ -7,19 +7,23 @@ require('./reset.scss');
 require ('./main.scss');
 
 import Welcome from './components/welcomepage.jsx';
-// import Timer from './components/timer.jsx';
-// import Quiz from './components/testscreen.jsx';
+import Test from './components/quiz.jsx';
+import Accepted from './components/accepted.jsx';
+import Rejected from './components/rejected.jsx';
+
 
 class App extends React.Component {
 
 
  render() {
    return(
-     <Router history={browserHistory}>
+   <Router history={browserHistory}>
      <Redirect from='/' to='/welcome'/>
      <Route path='/welcome'component={Welcome}/>
-
-     </Router>);
+     <Route path='/test' component={Test}/>
+     <Route path='/accepted' component={Accepted}/>
+     <Route path='/rejected' component={Rejected}/>
+    </Router>);
  }
 }
 

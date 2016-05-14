@@ -1,14 +1,19 @@
 import React from 'react';
 import {browserHistory} from 'react-router';
 
-import CountdownTimer from './timer.jsx';
 
 export default class Welcome extends React.Component{
+
+  _loadSecondButton(){
+    browserHistory.push('/test');
+    }
+
   render(){
     return(
       <div className="welcome">
-          <button className="startbutton">Start Test</button>
-          <CountdownTimer secondsRemaining="60"/>
+          <button className="startbutton"
+          onClick={this._loadSecondButton.bind(this)}>
+          Start Test</button>
       </div>
     )
   }
