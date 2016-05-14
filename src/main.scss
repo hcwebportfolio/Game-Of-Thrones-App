@@ -1,0 +1,62 @@
+html, body {
+    width:100vw;
+    height:100vh;
+    background:url(images/Van.jpg)no-repeat center center;
+}
+
+h1 {
+    color:#c2c2c2;
+}
+
+#react-id{
+  align-items: flex-start;
+text-align: center;
+
+}
+.sidebar{
+  height: 100vh;
+  width: 160px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.title{
+  font-size: 90px;
+  transform:rotate(270deg);
+  text-transform: uppercase;
+
+}
+.welcome{
+
+}
+
+.timer{
+  font-size: 50px;
+  transition: all 0.5s ease-in-out;
+  opacity: 1;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  border: 2px solid #ff9068;
+  font-family: 'digital-clock';
+  font-size: 4rem;
+  color: lightgreen;
+  width: 200px;
+  height: 75px;
+  background: #222;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 0 2px lime, 0 0 8px rgba(0, 255, 0, 0.5), 0 0 10px rgba(0, 255, 0, 0.8);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.startbutton{
+font-size: 20px;
+padding: 20px 80px;
+}
