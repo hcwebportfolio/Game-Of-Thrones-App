@@ -72,9 +72,16 @@ text-align: center;
 }
 
 .rejected{
-  background-color: red;
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
+  background: #AA1414;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-size: 100px;
+  text-transform: uppercase;
 
 }
 
@@ -86,8 +93,35 @@ text-align: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #EDF1F2;
+  color: #FFFFFF;
   font-size: 100px;
   text-transform: uppercase;
 
 }
+
+.begin-button{
+  outline: none;
+    border: 2px solid white;
+    background: #EDF1F2;
+    padding: 1rem 4rem;
+    color: #222;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    border-radius: 2px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+
+}
+
+// .questionbox{
+//
+//     width: 80%;
+//     margin: 0 auto;
+//     padding: 2rem;
+//     font-size: 1.5rem;
+//     background: white;
+//     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+//     color: #969696;
+//     line-height: 1.25;
+// }
