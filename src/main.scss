@@ -1,12 +1,31 @@
+body{
+  display:flex;
+}
+
+.wrapper{
+  display: flex;
+    align-items: center;
+    width: 100vw;
+    justify-content: center;
+}
+
+#react-app{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
 html, body {
     width:100vw;
     height:100vh;
-    background:url(images/Van.jpg)no-repeat center center;
+    background:url(images/game-of-thrones.jpg) no-repeat center center;
+    background-size: cover;
 }
 
 h1 {
-    color:#c2c2c2;
+    color:#878787;
 }
+
 
 #react-id{
   align-items: flex-start;
@@ -24,7 +43,7 @@ text-align: center;
 }
 
 .title{
-  font-size: 90px;
+  font-size: 50px;
   transform:rotate(270deg);
   text-transform: uppercase;
 
@@ -41,15 +60,15 @@ text-align: center;
   position: absolute;
   right: 1rem;
   top: 1rem;
-  border: 2px solid #ff9068;
+  border: 2px solid white;
   font-family: 'digital-clock';
   font-size: 4rem;
-  color: lightgreen;
+  color: white;
   width: 200px;
   height: 75px;
   background: #222;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  text-shadow: 0 0 2px lime, 0 0 8px rgba(0, 255, 0, 0.5), 0 0 10px rgba(0, 255, 0, 0.8);
+  text-shadow: 0 0 2px black, 0 0 8px rgba(0, 255, 0, 0.5), 0 0 10px rgba(0, 255, 0, 0.8);
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -59,20 +78,20 @@ text-align: center;
 
 .startbutton{
   outline: none;
-      border: 2px solid white;
-      background: #EDF1F2;
-      padding: 1rem 4rem;
-      color: #222;
-      font-weight: bold;
-      font-size: 1rem;
-      text-transform: uppercase;
-      letter-spacing: -1px;
-      border-radius: 2px;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  border: 2px solid white;
+  background: #EDF1F2;
+  padding: 1rem 4rem;
+  color: #222;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  border-radius: 2px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .rejected{
-  width: 100vw;
+  width: 87.5vw;
   height: 100vh;
   background: #AA1414;
   display: flex;
@@ -100,7 +119,7 @@ text-align: center;
 }
 
 .begin-button{
-  outline: none;
+    outline: none;
     border: 2px solid white;
     background: #EDF1F2;
     padding: 1rem 4rem;
@@ -114,14 +133,34 @@ text-align: center;
 
 }
 
-// .questionbox{
-//
-//     width: 80%;
-//     margin: 0 auto;
-//     padding: 2rem;
-//     font-size: 1.5rem;
-//     background: white;
-//     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-//     color: #969696;
-//     line-height: 1.25;
-// }
+.submit-button{
+  outline: none;
+  border: 2px solid white;
+  background: #EDF1F2;
+  padding: 1rem 4rem;
+  color: #222;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  border-radius: 2px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+
+}
+
+.input{
+  width: 300px;
+  height: 30px;
+}
+
+.question-box{
+
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    font-size: 1.5rem;
+    background: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    color: #969696;
+    line-height: 1.25;
+}
