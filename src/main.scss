@@ -101,7 +101,7 @@ text-align: center;
   color: #FFFFFF;
   font-size: 100px;
   text-transform: uppercase;
-
+  animation: blinker 1s linear 4;
 }
 
 .accepted{
@@ -115,6 +115,7 @@ text-align: center;
   color: #FFFFFF;
   font-size: 100px;
   text-transform: uppercase;
+  animation: blinker 1s linear 4;
 
 }
 
@@ -163,4 +164,8 @@ text-align: center;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     color: #969696;
     line-height: 1.25;
+}
+
+@keyframes blinker {
+  50% { opacity: 0,0; }
 }
